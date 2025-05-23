@@ -25,9 +25,9 @@ I would spend more time training the model training time, more stacking levels, 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|time_limit=600|presets='best_quality'|eval_metric='rmse'|your_score_1|
-|add_features|time_limit=600|presets='best_quality'|eval_metric='rmse'|your_score_2|
-|hpo|num_trials=50|searcher='random'|time_limit=3600|your_score_3|
+|initial|time_limit=600|presets='best_quality'|eval_metric='rmse'|1.80251|
+|add_features|time_limit=600|presets='best_quality'|eval_metric='rmse'|0.62743|
+|hpo|num_trials=50|searcher='random'|time_limit=3600|0.56439|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
