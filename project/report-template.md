@@ -25,21 +25,21 @@ I would spend more time training the model training time, more stacking levels, 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+|initial|time_limit=600|presets='best_quality'|eval_metric='rmse'|your_score_1|
+|add_features|time_limit=600|presets='best_quality'|eval_metric='rmse'|your_score_2|
+|hpo|num_trials=50|searcher='random'|time_limit=3600|your_score_3|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-TODO: Replace the image below with your own.
 
-![model_train_score.png](img/model_train_score.png)
+![model_train_score](https://github.com/user-attachments/assets/ebe86e8d-43c8-4f98-aaee-0dd1ce9b3536)
+
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-TODO: Replace the image below with your own.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score](https://github.com/user-attachments/assets/d8f1fa62-2905-47e8-bbe9-a83f629e0f6e)
+
 
 ## Summary
-TODO: Add your explanation
+From the graphs, it ca be seen that the feature engineering was the most impactful step as it significantly improved the model performance both in the model evaluation and kaggle scores. The consistency between both metrics suggests that the local validation is reasonably well-aligned with the test set.
